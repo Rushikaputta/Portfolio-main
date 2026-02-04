@@ -1,155 +1,114 @@
-# Panendra Jadav - Portfolio
+# Rushika Putta - Portfolio 🚀
 
-A modern, responsive portfolio website showcasing expertise in AI/ML, blockchain, and full-stack development.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![React](https://img.shields.io/badge/React-18-blue.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5-purple.svg)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38B2AC.svg)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-FF0055.svg)](https://www.framer.com/motion/)
 
-## 🚀 Live Demo
+A high-performance, hyper-visual portfolio website showcasing expertise in Computer Science, Artificial Intelligence, and Full-Stack Development. Built with a focus on immersive user experience and clean architecture.
 
-Visit the live portfolio: [https://panendrajadav.github.io/Portfolio/](https://panendrajadav.github.io/Portfolio/)
+## 🔗 Live Demo
 
-## 🛠️ Technologies Used
+Experience the portfolio live: **[rushikaputta.github.io/Portfolio-main/](https://rushikaputta.github.io/Portfolio-main/)**
 
-- **Frontend**: React 18, TypeScript, Vite
-- **Styling**: Tailwind CSS, shadcn/ui components
-- **Animations**: Framer Motion
-- **Icons**: React Icons
-- **Deployment**: GitHub Pages
+---
 
-## ✨ Features
+## ✨ Key Features
 
-- **Responsive Design**: Optimized for all devices
-- **Dark/Light Theme**: Toggle between themes
-- **Interactive Animations**: Smooth Framer Motion animations
-- **AI Chatbot**: Personal assistant with portfolio knowledge
-- **Dynamic Sections**: 
-  - Hero with animated profile
-  - Tech stack showcase
-  - Featured projects
-  - Professional certifications
-  - Volunteer activities
-  - GitHub activity integration
-  - Contact information
+- **🤖 Penguin Assistant**: An AI-powered chatbot leveraging Gemini to provide instant answers about my professional background, skills, and projects.
+- **🔍 Google Search Presence**: Integrated showcase of digital footprint and professional recognition.
+- **📊 Real-time GitHub Activity**: Live tracking of contributions and coding habits.
+- **📱 Fluid Responsiveness**: Seamless experience across mobile, tablet, and desktop (4K optimized).
+- **🎭 Immersive Animations**: Advanced transitions and interactive elements powered by Framer Motion.
+- **🛠️ Tech Stack Showcase**: Interactive visualization of core competencies.
+- **🎓 Academic & Professional Journey**: Detailed sections for Education, Experience, and Certifications.
+- **🤝 Volunteer & Leadership**: Highlighting social contributions and community engagement.
+
+---
 
 ## 🏗️ Project Structure
 
 ```
-Portfolio/
-├── public/                 # Static assets
+Portfolio-main/
+├── public/                # Static assets & certificates
 ├── src/
-│   ├── components/        # React components
-│   ├── api/              # Chat API logic
-│   ├── assets/           # Images and media
-│   ├── hooks/            # Custom React hooks
-│   ├── lib/              # Utility functions
-│   └── pages/            # Page components
-├── index.html            # Entry HTML file
-└── vite.config.ts        # Vite configuration
+│   ├── api/               # API clients (Chatbot, etc.)
+│   ├── assets/            # Local media assets
+│   ├── components/        # React components (UI & Layout)
+│   │   └── ui/            # shadcn/ui shared components
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Shared utilities (shadcn/ui defaults)
+│   ├── pages/             # Page layouts
+│   └── utils/             # Helper functions
+├── index.html             # HTML entry point
+├── package.json           # Dependencies and scripts
+└── vite.config.ts         # Vite configuration
 ```
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
+- **Node.js**: v18.0.0 or higher
+- **npm**: v9.0.0 or higher
 
-### Installation
+### Installation & Development
 
-1. Clone the repository:
-```bash
-git clone https://github.com/panendrajadav/Portfolio.git
-cd Portfolio
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Rushikaputta/Portfolio-main.git
+   cd Portfolio-main
+   ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-3. Start development server:
-```bash
-npm run dev
-```
+3. **Launch development server:**
+   ```bash
+   npm run dev
+   ```
 
-4. Open [http://localhost:8080](http://localhost:8080) in your browser
+4. **Access the app:**
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-### Building for Production
-
+### Production Build
 ```bash
 npm run build
 ```
 
-### Deployment to GitHub Pages
+---
 
-```bash
-npm run deploy
-```
+## 🎨 Customization Guide
 
-## 📱 Responsive Design
+Easily adapt this portfolio by updating the following files:
 
-The portfolio is fully responsive and optimized for:
-- Desktop (1920px+)
-- Laptop (1024px - 1919px)
-- Tablet (768px - 1023px)
-- Mobile (320px - 767px)
-
-## 🎨 Customization
-
-### Theme Colors
-Colors are defined in `tailwind.config.ts` and can be customized:
-- Primary colors
-- Accent colors
-- Background variants
-- Text colors
-
-### Content Updates
-- **Projects**: Update `src/components/Projects.tsx`
-- **Skills**: Update `src/components/TechStack.tsx`
-- **Experience**: Update `src/components/Experience.tsx`
-- **Certifications**: Update `src/components/Certifications.tsx`
-
-## 🤖 AI Chatbot
-
-The portfolio includes an intelligent chatbot that can answer questions about:
-- Technical skills and expertise
-- Project details and technologies
-- Professional experience
-- Educational background
-- Achievements and certifications
-
-## 📊 Performance
-
-- **Lighthouse Score**: 95+ across all metrics
-- **Bundle Size**: Optimized with code splitting
-- **Loading Speed**: Fast initial load with lazy loading
-- **SEO Optimized**: Meta tags and semantic HTML
-
-## 🔧 Development
-
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run deploy` - Deploy to GitHub Pages
-
-### Code Quality
-
-- **TypeScript**: Full type safety
-- **ESLint**: Code linting and formatting
-- **Component Structure**: Modular and reusable components
-- **Performance**: Optimized animations and lazy loading
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📞 Contact
-
-**Panendra Jadav**
-- Email: panendrajadav@gmail.com
-- LinkedIn: [panendra-jadav](https://www.linkedin.com/in/panendra-jadav-6b458a27a)
-- GitHub: [panendrajadav](https://github.com/panendrajadav)
+| Section | File Path |
+| :--- | :--- |
+| **Hero & Persona** | `src/components/Hero.tsx` |
+| **About Me** | `src/components/About.tsx` |
+| **Projects** | `src/components/Projects.tsx` |
+| **Experience** | `src/components/Experience.tsx` |
+| **Education** | `src/components/Education.tsx` |
+| **Tech Stack** | `src/components/TechStack.tsx` |
+| **Certifications** | `src/components/Certifications.tsx` |
+| **Contact Info** | `src/components/Contact.tsx` |
 
 ---
 
-Built with ❤️ using React, TypeScript, and modern web technologies.
+## 📞 Let's Connect
+
+**Rushika Putta**
+*Aspiring AI & ML Engineer*
+
+- 📧 **Email**: [rushikaputta1105@gmail.com](mailto:rushikaputta1105@gmail.com)
+- 💼 **LinkedIn**: [rushika-putta](https://www.linkedin.com/in/rushika-putta-683766307)
+- 🐙 **GitHub**: [@Rushikaputta](https://github.com/Rushikaputta)
+
+---
+
+Built with ❤️ by **Rushika Putta** using React, TypeScript, and Framer Motion.
