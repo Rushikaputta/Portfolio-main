@@ -17,8 +17,6 @@ Experience the portfolio live: **[rushikaputta.github.io/Portfolio-main/](https:
 
 ## ✨ Key Features
 
-- **🤖 Penguin Assistant**: An AI-powered chatbot leveraging Gemini to provide instant answers about my professional background, skills, and projects.
-- **🔍 Google Search Presence**: Integrated showcase of digital footprint and professional recognition.
 - **📊 Real-time GitHub Activity**: Live tracking of contributions and coding habits.
 - **📱 Fluid Responsiveness**: Seamless experience across mobile, tablet, and desktop (4K optimized).
 - **🎭 Immersive Animations**: Advanced transitions and interactive elements powered by Framer Motion.
