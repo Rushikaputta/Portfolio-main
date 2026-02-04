@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import profileImage from "@/assets/profile.jpg";
 
 export const Hero = () => {
   return (
@@ -39,7 +38,7 @@ export const Hero = () => {
               className="text-7xl md:text-[10rem] lg:text-[14rem] font-black tracking-tighter leading-none"
             >
               <span className="inline-block hover:scale-[1.05] transition-transform duration-500 cursor-default">
-                RUSHIKA
+                RUSHIKA PUTTA
               </span>
             </motion.h1>
           </div>
