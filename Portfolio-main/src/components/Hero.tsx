@@ -35,12 +35,13 @@ export const Hero = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 1 }}
-              className="text-7xl md:text-[10rem] lg:text-[14rem] font-black tracking-tighter leading-none"
+              className="text-5xl md:text-7xl lg:text-9xl font-black tracking-tighter leading-none"
             >
               <span className="inline-block hover:scale-[1.05] transition-transform duration-500 cursor-default">
                 RUSHIKA PUTTA
               </span>
             </motion.h1>
+
           </div>
 
           <motion.p
