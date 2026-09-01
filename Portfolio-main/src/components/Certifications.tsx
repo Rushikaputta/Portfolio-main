@@ -42,13 +42,23 @@ export const Certifications = () => {
                     <div className="bg-card border border-border rounded-xl p-6 transition-all duration-300 relative overflow-hidden group-hover:shadow-accent/20 group-hover:shadow-xl h-full flex flex-col items-center text-center">
                       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                      <div className="w-24 h-24 mb-4 relative z-10 p-2 bg-white rounded-full flex items-center justify-center shadow-sm">
-                        <img
-                          src={cert.image}
-                          alt={cert.title}
-                          className="w-full h-full object-contain"
-                        />
-                      </div>
+                      {cert.image.includes("_cert.png") ? (
+                        <div className="w-full h-36 mb-4 relative z-10 rounded-lg overflow-hidden shadow-sm border border-border">
+                          <img
+                            src={cert.image}
+                            alt={cert.title}
+                            className="w-full h-full object-cover object-top"
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-24 h-24 mb-4 relative z-10 p-2 bg-white rounded-full flex items-center justify-center shadow-sm">
+                          <img
+                            src={cert.image}
+                            alt={cert.title}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                      )}
 
                       <h3 className="text-lg font-bold mb-2 relative z-10 line-clamp-2">
                         {cert.title}
