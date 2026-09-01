@@ -14,7 +14,7 @@ export const About = () => {
 
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              I am a 3rd-year B.Tech student specializing in Computer Science and Artificial Intelligence. As a Google Cloud Insider and an expert in various AI tools, I enjoy working on AI-powered applications, machine learning models, and tech-driven solutions.
+              I am a final year B.Tech student specializing in Computer Science (Artificial Intelligence). As a Google Cloud Insider and an expert in various AI tools, I enjoy working on AI-powered applications, machine learning models, and tech-driven solutions.
             </p>
 
             <p>

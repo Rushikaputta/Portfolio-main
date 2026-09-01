@@ -5,7 +5,7 @@ export const Education = () => {
     const educationItems = [
         {
             degree: "Bachelor of Technology (B.Tech)",
-            specialization: "Computer Science and Artificial Intelligence",
+            specialization: "Computer Science (Artificial Intelligence)",
             institution: "G. Pullaiah College of Engineering and Technology",
             period: "2023 - 2027",
             description: "Focused on Artificial Intelligence, Machine Learning, and core Computer Science principles.",

@@ -27,38 +27,30 @@ export const Certifications = () => {
             achievements in AI, Cloud, and Data Science.
           </p>
 
-          <div className="w-full relative py-10 mb-10">
-            <div className="flex animate-marquee hover:animation-paused space-x-8 min-w-full px-4">
-              {[...certifications, ...certifications, ...certifications].map(
-                (cert, index) => (
+          <div className="flex flex-wrap justify-center gap-8 mb-10">
+              {certifications.map((cert) => (
                   <motion.a
-                    key={`${cert.title}-${index}`}
+                    key={cert.title}
                     href={cert.verifyUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
                     whileHover={{ scale: 1.05, y: -5 }}
-                    className="flex-shrink-0 w-64 md:w-80 group cursor-pointer"
+                    className="w-72 md:w-80 group cursor-pointer"
                   >
                     <div className="bg-card border border-border rounded-xl p-6 transition-all duration-300 relative overflow-hidden group-hover:shadow-accent/20 group-hover:shadow-xl h-full flex flex-col items-center text-center">
                       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                      {cert.image.includes("_cert.png") ? (
-                        <div className="w-full h-36 mb-4 relative z-10 rounded-lg overflow-hidden shadow-sm border border-border">
-                          <img
-                            src={cert.image}
-                            alt={cert.title}
-                            className="w-full h-full object-cover object-top"
-                          />
-                        </div>
-                      ) : (
-                        <div className="w-24 h-24 mb-4 relative z-10 p-2 bg-white rounded-full flex items-center justify-center shadow-sm">
-                          <img
-                            src={cert.image}
-                            alt={cert.title}
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                      )}
+                      <div className="w-full h-36 mb-4 relative z-10 rounded-lg overflow-hidden shadow-sm border border-border">
+                        <img
+                          src={cert.image}
+                          alt={cert.title}
+                          className="w-full h-full object-cover object-top"
+                        />
+                      </div>
 
                       <h3 className="text-lg font-bold mb-2 relative z-10 line-clamp-2">
                         {cert.title}
@@ -67,11 +59,13 @@ export const Certifications = () => {
                       <p className="text-sm text-muted-foreground relative z-10">
                         {cert.issuer}
                       </p>
+
+                      <p className="text-xs text-muted-foreground/70 mt-2 relative z-10 font-mono break-all">
+                        ID: {cert.credentialId}
+                      </p>
                     </div>
                   </motion.a>
-                )
-              )}
-            </div>
+              ))}
           </div>
 
           <motion.a
