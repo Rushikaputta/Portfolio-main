@@ -29,7 +29,7 @@ export const certifications: Certificate[] = [
   {
     title: "SAP Certified - Back-End Developer - ABAP Cloud",
     issuer: "SAP",
-    image: "https://images.credly.com/size/340x340/images/acf3ceaf-d9a9-490f-87fd-c8a6ad02cbe7/image.png",
+    image: getImageUrl("sap_abap_cert.jpg"),
     verifyUrl: "https://www.credly.com/badges/acf3ceaf-d9a9-490f-87fd-c8a6ad02cbe7",
     credentialId: "acf3ceaf-d9a9-490f-87fd-c8a6ad02cbe7",
     issuedDate: "Sep 15, 2026",
