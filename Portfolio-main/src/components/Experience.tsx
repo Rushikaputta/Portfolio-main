@@ -3,16 +3,30 @@ import { motion } from "framer-motion";
 export const Experience = () => {
   const experiences = [
     {
-      role: "Google Cloud",
-      position: "Arcade Facilitator",
-      period: "2024 - Present",
-      description: "Mentoring and facilitating students in completing Google Cloud Arcade challenges, focused on Cloud infrastructure, security, and Generative AI.",
+      role: "APCSHE – SmartBridge",
+      position: "Generative AI Intern",
+      period: "2026",
+      bullets: [
+        "Built AI-powered applications integrating LLMs and prompt engineering; developed RAG workflows for intelligent document retrieval.",
+        "Integrated Amazon Bedrock APIs and designed autonomous AI agents for workflow automation and enterprise use cases.",
+      ],
     },
     {
-      role: "Zaalima Development",
-      position: "Machine Learning & Data Science Intern",
-      period: "Present",
-      description: "Working on real-world machine learning models and data science projects to build intelligent systems and data-driven solutions.",
+      role: "Zalima Development",
+      position: "AI/ML Intern",
+      period: "2025",
+      bullets: [
+        "Developed ML models using TensorFlow and Scikit-learn; performed feature engineering and hyperparameter tuning to improve accuracy.",
+        "Contributed to real-world predictive analytics projects supporting business decision-making.",
+      ],
+    },
+    {
+      role: "IIT Roorkee",
+      position: "AI Intern",
+      period: "2024",
+      bullets: [
+        "Built supervised ML models for classification tasks; evaluated performance using accuracy, precision, recall, and F1-score.",
+      ],
     },
   ];
 
@@ -50,9 +64,13 @@ export const Experience = () => {
                       {exp.period}
                     </span>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {exp.description}
-                  </p>
+                  <ul className="list-disc list-inside space-y-1">
+                    {exp.bullets.map((point, i) => (
+                      <li key={i} className="text-muted-foreground leading-relaxed">
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </motion.div>
               ))}
             </div>
