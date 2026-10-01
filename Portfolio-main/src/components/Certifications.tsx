@@ -63,6 +63,21 @@ export const Certifications = () => {
                       <p className="text-xs text-muted-foreground/70 mt-2 relative z-10 font-mono break-all">
                         ID: {cert.credentialId}
                       </p>
+
+                      {(cert.issuedDate || cert.expiresDate) && (
+                        <div className="flex flex-wrap justify-center gap-3 mt-3 relative z-10">
+                          {cert.issuedDate && (
+                            <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full font-medium">
+                              Issued: {cert.issuedDate}
+                            </span>
+                          )}
+                          {cert.expiresDate && (
+                            <span className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-full font-medium">
+                              Expires: {cert.expiresDate}
+                            </span>
+                          )}
+                        </div>
+                      )}
                     </div>
                   </motion.a>
               ))}

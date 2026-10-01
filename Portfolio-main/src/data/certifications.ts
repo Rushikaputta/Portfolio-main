@@ -7,6 +7,8 @@ export interface Certificate {
   image: string;
   verifyUrl: string;
   credentialId: string;
+  issuedDate?: string;
+  expiresDate?: string;
 }
 
 export const certifications: Certificate[] = [
@@ -30,6 +32,8 @@ export const certifications: Certificate[] = [
     image: "https://images.credly.com/size/340x340/images/acf3ceaf-d9a9-490f-87fd-c8a6ad02cbe7/image.png",
     verifyUrl: "https://www.credly.com/badges/acf3ceaf-d9a9-490f-87fd-c8a6ad02cbe7",
     credentialId: "acf3ceaf-d9a9-490f-87fd-c8a6ad02cbe7",
+    issuedDate: "Sep 15, 2026",
+    expiresDate: "Sep 16, 2027",
   },
 ];
 
