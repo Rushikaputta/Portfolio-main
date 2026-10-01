@@ -83,17 +83,31 @@ export const Certifications = () => {
               ))}
           </div>
 
-          <motion.a
-            href="https://www.credly.com/users/rushika-putta"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 px-8 py-4 bg-accent text-accent-foreground rounded-full font-bold text-lg hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/20"
-          >
-            <span>View Credly Profile</span>
-            <FiExternalLink className="w-5 h-5" />
-          </motion.a>
+          <div className="flex flex-wrap justify-center gap-4">
+            <motion.a
+              href="https://www.credly.com/users/rushika-putta"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-3 px-8 py-4 bg-accent text-accent-foreground rounded-full font-bold text-lg hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/20"
+            >
+              <span>View Credly Profile</span>
+              <FiExternalLink className="w-5 h-5" />
+            </motion.a>
+
+            <motion.a
+              href="https://www.credly.com/badges/acf3ceaf-d9a9-490f-87fd-c8a6ad02cbe7"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-3 px-8 py-4 border border-accent text-accent rounded-full font-bold text-lg hover:bg-accent/10 transition-all shadow-lg"
+            >
+              <span>View SAP Certificate</span>
+              <FiExternalLink className="w-5 h-5" />
+            </motion.a>
+          </div>
         </motion.div>
       </div>
     </section>
